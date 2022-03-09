@@ -1,0 +1,61 @@
+body {
+  background: black;
+  color: #eee;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.console {
+  width: 200px;
+  height: 244px;
+  // background-color: #f8ea97;
+  background-image: url("/images/console.png");
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+
+  .bezel {
+    margin-top: 16px;
+    width: 170px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    canvas {
+      border: 2px solid #000000;
+      background-color: #000;
+    }
+  }
+
+  .controller {
+    position: relative;
+    background-color: #eee;
+
+    .btn {
+      width: 25px;
+      height: 25px;
+      background-color: #f28314;
+      border-radius: 25px;
+      border-width: 0px;
+    }
+
+    .btn-a {
+      position: absolute;
+      right: 50px;
+      bottom: 56px;
+    }
+
+    .btn-b {
+      position: absolute;
+      right: 0px;
+      bottom: 56px;
+    }
+  }
+}
