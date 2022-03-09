@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import "../components/eightro";
+import { EightroConsole } from "../components/EightroConsole";
 import "../styles/main.scss";
 
 // markup
@@ -14,16 +14,11 @@ const IndexPage = () => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <script src="/js/tetris.js" />
       </Helmet>
       <div>
         <h1>8tro.js</h1>
       </div>
-      <div className="console">
-        <div className="bezel">
-          <canvas id="console-canvas" width={128} height={64}></canvas>
-        </div>
-      </div>
+      <EightroConsole scale={1} url="/js/showcase.js" />
     </main>
   );
 };
